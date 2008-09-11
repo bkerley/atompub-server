@@ -11,7 +11,7 @@ module ActionView
         feed_opts = { "xml:lang" => options[:language] || "en-US", "xmlns" => 'http://www.w3.org/2005/Atom' }
 
         options.each do |key, value|
-          feed_opts[key] = value if key.match(/^xmlns/)
+          feed_opts[key] = value if key.to_s.match(/^xmlns/)
         end
 
         xml.feed feed_opts do

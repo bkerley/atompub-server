@@ -1,4 +1,4 @@
-module Atom
+module AtomServer
   module Acts #:nodoc:
     module Collection #:nodoc:
       class UndefinedOptionError < StandardError ; end

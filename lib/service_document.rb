@@ -1,4 +1,4 @@
-module Atom
+module AtomServer
   module Acts #:nodoc:
     module ServiceDocument #:nodoc:
        require 'rexml/document'
@@ -11,7 +11,7 @@ module Atom
 
       module ClassMethods
         def acts_as_service_document
-          include Atom::Acts::ServiceDocument::InstanceMethods       
+          include AtomServer::Acts::ServiceDocument::InstanceMethods       
         end
       end
 
