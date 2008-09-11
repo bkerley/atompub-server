@@ -10,8 +10,8 @@ module AtomServer
 
       module ClassMethods
         def acts_as_collection(opts = {})
-          include Atom::Acts::Collection::InstanceMethods
-          extend Atom::Acts::Collection::SingletonMethods
+          include AtomServer::Acts::Collection::InstanceMethods
+          extend AtomServer::Acts::Collection::SingletonMethods
           raise UndefinedOptionError('accept') unless opts.include?:accept
           raise UndefinedOptionError('href') unless opts.include?:href
           raise UndefinedOptionError('title') unless opts.include?:title
