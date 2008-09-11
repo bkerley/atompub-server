@@ -39,7 +39,7 @@ module AtomServer
         
         collection_post_method = ENV['COLLECTION_POST_METHOD'] || :create
         entry_put_method = ENV['ENTRY_PUT_METHOD'] || :update
-        ActionController::Base.before_filter :filter_content_type, :only => [collection_post_method, entry_put_method]
+        # ActionController::Base.before_filter :filter_content_type, :only => [collection_post_method, entry_put_method]
       end
 
       module InstanceMethods
